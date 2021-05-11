@@ -1,0 +1,11 @@
+/*Formlar yazisini, input'lari ve yazilari global vererek ortalayalim */
+* {
+  text-align: center;
+}
+
+/* class="input" olan inputlara bir style olusturalim*/
+.input {
+  margin-bottom: 20px; /*Bosluk verelim*/
+  width: 200px; /*Genislik(uzunluk) verelim*/
+  height: 25px; /*Yukseklik verelim*/
+}

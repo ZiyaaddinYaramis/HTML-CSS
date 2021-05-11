@@ -1,0 +1,186 @@
+<!-- 
+ • Html komutlarına tag denir.
+ • Taglar büyüktür küçüktür işaretlerinin arasına yazılır < >
+ • İstisnalar dışında tagların başlangıç ve bitişleri vardır. Bitiş tagları «/» işareti ile belirtilir.
+
+
+
+
+Bir web sayfası oluşturmak için temelde yapılması gerekenler:
+
+1. Html uzantılı bir dosya oluşturulur.
+2. Dosyanın içinde asgari olarak bulunması gereken taglar yazılır.
+
+   Html : Html komutlarının tamamını kapsayan en temel tagdır
+   Head : Sayfa ile ilgili genel bilgilerin ve tanımlamaların olduğu bölümdür
+   Title : Tarayıcının başlığında gözükecek yazıyı gösterir
+
+       Title SEO için çok önemlidir. Sayfa için en önemli anahtar kelimeler
+       burada olmalıdır. Sayfa ile alakalı olmalı ve 60 karakteri geçmemelidir.
+       Arama sonuçlarındaki başlık burada yazan ifadedir.
+
+   Body : İçerik kısmının olduğu bölümdür. Sayfada görülen tüm içerik bu bölüme konulmalıdır.
+
+
+
+
+Element : Bir html tagı ve arasındakilerin tamamına element denir.
+Parent : Bir elementi içine alan elemente parent element denir.
+Child : Bir elementin içinde bulunan elementlere child element denir.
+
+
+      Proje klasöründe web sayfaları
+bulunur.
+        Assets klasöründe
+          resimleri saklamak için img,
+          stil dosyalarını saklamak için css,
+          javascript dosyalarını saklamak için js,
+          harici kütüphaneleri kullanmak için lib isimli klasörler kullanılabilir.
+
+       BICIMLENDIRME TAGLARI
+
+ <p> </p> ==> Yazıları paragraf haline getirir.
+
+ <br> </br> ==> Metin içinde satır başı yapmak için kullanılır
+
+ <h1> </h1> ==> Yazıları başlık haline getirir. Standart 6 tane başlık tagı bulunmaktadır.
+
+ <hr> </hr> ==> Yatay çizgi oluşturmak için kullanılır
+
+ <strong> </strong> ==> Metinleri kalınlaştırmak için kullanılır.
+
+ <b> </b> ==> Metinleri kalınlaştırmak için kullanılır. Strong semantic bir tagdır. B değildir. Eğer
+arama motorlarına hitp edecek bir bilgi ise strong kullanılır, yoksa amaç
+sadece kalınlaştırmak ise b kullanılır.
+
+ <em></em> ==> Yazıyı eğik (italik) yazdırmak için kullanılır.
+
+ <i> </i> ==> Yazıyı eğik (italik) yazdırmak için kullanılır. Em tagı semantic tir.
+
+ <u> </u> ==> Yazının altını çizmek için kullanılır.
+
+ <font face="verdana" color="red" size="3">Merhaba</font> ==> Yazının tipini ve rengini değştirmek için kullanılır
+
+ <mark> </mark> ==> Bir metin içerisinde dikkat çekmek istediğimiz bölümlere fosforlu kalem efekti
+vermek için kullanılır.
+
+ <del> </del> ==> Yazının üstünü çizmek için kullanılır. Özellikle alışveriş sitelerindeki indirimsiz fiyatı
+gösterirken kullanılır.
+
+ <blockquote> </blockquote> ==> Yazıya girinti verir. Genellikle alıntı yaparken kullanılan bir tagtır.
+
+ <code> </code> ==> Web sayfasında bilgisayar kodları gösterilmek istediğinde kullanılır. Yazının
+fontu monospace olarak gösterilerek diğer yazılardan belirgin bir şekilde ayrılır.
+
+ f<sub>2 </sub> ==> Alt simge olarak göstermek için kullanılır
+
+ X<sup>2</sup> ==> Üst simge olarak göstermek için kullanılır
+
+ <abbr title="Hypertext Markup Language">HTML</abbr ==>
+Kısaltmalar için, fare ile üzerine gelindiğinde açıklama yazısı çıkarır.
+<p>Bu dersimide <abbr title="Hypertext Markup
+Language">HTML</abbr> konusunu göreceğiz</p>
+
+
+
+      LISTELEME TAGLARI
+
+
+
+
+ <ol> </ol> ==> Numaralı liste oluşturmak için kullanılır
+ <li> </li> ==> Listeye eleman eklemek için kullanılır
+         <ol>
+             <li>Beşiktaş</li>
+             <li>Galatasaray</li>
+             <li>Fenerbahçe</li>
+         </ol>
+
+
+ <ul> </ul> ==> Madde işaretli liste oluşturmak için kullanılır
+ <li> </li> ==> Listeye eleman eklemek için kullanılır
+            <ul>
+               <li>Beşiktaş</li>
+               <li>Galatasaray</li>
+               <li>Fenerbahçe</li>
+            </ul>
+ 
+            
+
+            Liste türünü değiştirme
+
+
+            <ol type="1 | A | a | I | i">
+                <li>Beşiktaş</li>
+                <li>Fenerbahçe</li>
+                <li>Galatasaray</li>
+            </ol>
+
+
+            <ul type="disc | square | circle">
+                 <li>Beşiktaş</li>
+                 <li>Fenerbahçe</li>
+                 <li>Galatasaray</li>
+            </ul>
+
+
+
+            Liste başlangıç değerini değiştirme;  start="c
+
+            <ol type="a" start="c">
+                  <li>Beşiktaş</li>
+                  <li>Fenerbahçe</li>
+                  <li>Galatasaray</li>
+            </ol>
+
+
+
+      BAGLANTI TAGI
+
+      <a> </a>
+
+      Web sitelerinde,
+
+            Bir sayfadan başka bir sayfaya,
+            Aynı sayfanın farklı bölümlerine,
+            Başka bir sayfanın farklı bir bölümüne
+            Farkı bir siteye
+            Eposta adresine
+            Telefon numarasına
+            Whatsapp uygulamasına
+           Bağlantı vermek için <a> tagı kullanılır.
+
+
+
+            Başka bir siteye link vermek için:
+
+            <a href="https://google.com.tr">Google’ a Git</a>
+
+            Bağlantıyı yeni bir sekmede açmak için:
+
+            <a href="https://google.com.tr"
+            target="_blank">Google’ a Git</a>
+
+            Bir dosyaya link vermek:
+            <a href="img/resim1.jpg">Fotoğrafı aç</a>
+
+
+
+            Eposta adresine link vermek için:
+            <a href="mailto:zsari@techproed.com">Eposta Gönder</a>
+
+            Telefon numarasına link vermek için:
+            <a href="tel:+905552226633">Ara</a>
+
+            Whatsapp numarasına link vermek için:
+            <a href="https://wa.me/905552226633">Whatsapp</a>
+            <a href="https://wa.me/905552226633?text=Merhaba">Whatsapp</a>
+
+
+
+                      
+
+
+
+
+-->

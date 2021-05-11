@@ -1,0 +1,100 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- style dosyasina link vermeliyiz ki  index style dosyasindaki style'lar aktif olabilsin-->
+
+    <title>FORMLAR</title>
+  </head>
+  <body>
+    <h1>FORMLAR</h1>
+
+    <form action="kaydet.php">
+      <!--action su islemi yapar arkadaslar;aslinda bu formu save yani submit butonu ile kaydedince, nereye gidecegini belirtiyorsunuz yani diyorsunuz ki kaydet.php adinda serverde bir dosyaniz oldugunu dusunun. o dosyaya bu isin kaydedilecegini göstermek icin yapildigini dusunebilirsiniz yani bu kisim sadece server ile alakali..
+      
+      <form action="kaydet.php"></form> diyelim ki server da bir dosyaniz var bu formu birisi submit ederse kaydet.php deki serverdaki dosyayi al ver, o icrasini yapsin diyoruz -->
+
+      <label for="ad">Adiniz</label>
+
+      <!-- label input'un önune yazi girmek icindir br koyarsan alt satira atar kullanabilirsin-->
+
+      <input
+        class="input"
+        id="ad"
+        type="text"
+        placeholder="isim giriniz"
+        name="ad"
+        value=""
+      />
+      <br />
+      <br />
+
+      <!-- name="ad" diye bir degisken olusturduk  adiniz isimli(label) input'a girilen(submit edilen) veriyi server da "ad" isimli bir degiskene atanmis olunacaktir. gercekten calisan bir sistemde name="ad" ve value="" kullanilmalidir.-->
+
+      <!-- class="input" ==> input adinda bir classimiz var. (adina herhangi bir isim verebilirsiniz anlasilmasi kolay olsun diye input yazdik.) Amacimiz style.css dosyasindan buradaki tum class="input" olan imputlara ortak sytle vermektir 
+    
+      class="input" stillendirme de turu belirtmek icin 
+      id="ad"  input ile label'i baglamak icin
+      type="text" input'un turunu belirtmek icin
+    
+    -->
+
+      <!--input veri girisi alanidir  placeholder="isim giriniz imput alaninin icine yazdirir
+    
+      type text ise yazi oluyor
+      type password ise sifre oluyor
+      type number ise sayi oluyor
+      type email ise email oluyor
+      type button ise buton olur
+      type submit ise  girilen veriyi  belirtilen yere(kaydet.php) yukleme islemini yapar
+    -->
+
+      <label for="sifre">Sifreniz</label>
+      <input
+        class="input"
+        id="sifre"
+        type="password"
+        name="sifre"
+        value=""
+        required=""
+      />
+      <br />
+      <br />
+
+      <!-- required="" ile input alaninin icine verinin girilmesini zorunlu hale getirir-->
+
+      <label for="email">E-Posta</label>
+      <input class="input" id="email" type="email" name="email" value="" />
+      <br />
+      <br />
+
+      <label for="sayi">Yasiniz</label>
+      <input
+        class="input"
+        id="sayi"
+        type="number"
+        name="yas"
+        value=""
+        min="0"
+        max="100"
+      />
+      <br />
+
+      <!-- Buraya bir buton koyalim submit butonu gönder butonu. Bunuda input ile yapabiliriz 
+    type olarak button yazmaliyiz
+    isim olarakta => value="Gönder" yazmaliyiz
+    
+    -->
+
+      <input type="submit" value="Gönder" />
+
+      <!-- buton'un turunu type="submit" dersek bir görev tahsil ediyor yani bu formdaki verileri kaydet.php adinda (<form action="kaydet.php"></form>) bir server dosyasina göndermeye calisiyor  -->
+
+      <input type="button" value="Temizle" />
+      <!-- <input type="button" value="Temizle" /> klasik butondur -->
+    </form>
+  </body>
+</html>

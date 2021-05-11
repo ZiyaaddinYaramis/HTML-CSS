@@ -1,0 +1,39 @@
+/*Herseyi ortalamak icintext-align kullanilir ve center yazilir. Tablo icin gecerli olmaz */
+* {
+  text-align: center;
+}
+
+h1 {
+  color: red;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 30px;
+}
+
+.tablo {
+  border: 3px solid grey; /*border=kalinlik, solid=cizgi turu (solid|double|dashed) */
+  border-collapse: collapse; /*Tablodaki cizgileri birlestirmek icin*/
+  width: 70%; /*Yuzdelik dilim sayfaya göre hesaplanir. tablonun sayfanin yuzde kacini kapsayacagini stillendirdik*/
+  margin-left: auto;
+  margin-right: auto;
+  /*margin-left:auto;
+  margin-right:auto; sol ve sag otomatik bosluk koymak icindir. bu sekilde nesneler ortaya hizalabilir*/
+}
+
+/*Birden fazla atribute'e ayni stillendirme yapilacaksa virgul ile ayrilarak yazilabilir*/
+th,
+td {
+  border: 4px solid gray;
+}
+
+th {
+  background-color: yellowgreen;
+}
+tr:hover {
+  /* hover uzerine gelindigindeki degisikliktir*/
+  background-color: rgb(197, 194, 194);
+}
+
+tr:nth-child(even) {
+  /*even Tek olanlar*/
+  background-color: grey;
+}

@@ -1,0 +1,128 @@
+<html>
+  <!--Html komutlarına tag denir. 
+  
+  Taglar büyüktür küçüktür işaretlerinin arasına yazılır < >
+  İstisnalar dışında tagların başlangıç ve bitişleri vardır. Bitiş tagları «/» işareti ile belirtilir.
+  
+  -->
+  <head>
+    <title>Ilk Sayfam</title>  <!--  -->
+  </head>
+
+  <body style="background-color: blanchedalmond">
+    <!-- <h1></h1> de bir hiyerarsi vardir -->
+    <h1>HTML</h1>
+    <h2>CSS</h2>
+    <h3>JS</h3>
+    <h4 style="font-size: 50px; color: brown">JAVA</h4>
+
+    <!-- <br> etiketi kursoru bir satir asagiya indirir 
+    klavye'deki enter gibi  -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- <br> <br> -->
+
+    <!-- style attribute ile verilen özellikler aslinda CSS stillendirmeleridir devamini hocadan yazmalisin -->
+
+    <h2 style="color: blueviolet">HTML NEDIR</h2>
+
+    <p>HTML Dersine Hosgeldiniz</p>
+    <!-- <p></p>  Paragraf icindir  ve her paragraf arasina otomatik olarak kursor
+kursor bir satir asagiya inmis gibi olur-->
+    <p style="color: brown">
+      Bugün <strong>HTML</strong> göremeye başladık. <em>HTML</em> bir
+      <del>programlama</del> dili değildir. Sadece bir
+      <mark>işaretleme</mark> dilidir
+    </p>
+
+    <h2 style="color: darkred">LISTE OLUSTURMA</h2>
+    <p>HTML'de liste olusturmak icin &ltol&gt, ul gibi etiketler kullanilir</p>
+
+    <ol type="A" start="3">
+      <!-- Numarali liste olusturduk -->
+      <!-- 1,A.I,i kullanilabilir. Baslangic icin ise start= "rakam"-->
+
+      <li>Ahmet</li>
+      <li>Mehmet</li>
+      <li>Ismet</li>
+      <li>Saffet</li>
+    </ol>
+
+    <p>Maddeli liste olusturmak icin &ltul&gt etiketi kullanilir</p>
+
+    <ul type="square">
+      <!-- disc,square,circle-->
+
+      <li>Adana</li>
+      <li>Urfa</li>
+      <li>Antep</li>
+    </ul>
+
+    <p>Ic ice liste oluşturma...</p>
+    <ol>
+      <li>
+        İstanbul
+        <ul>
+          <li>Fatih</li>
+          <li>Üsküdar</li>
+          <li>Esenyurt</li>
+        </ul>
+      </li>
+      <li>
+        Sakarya
+        <ul>
+          <li>Sapanca</li>
+          <li>Serdivan</li>
+        </ul>
+      </li>
+    </ol>
+    <h2>LINK VERME</h2>
+    <p>Link vermek icin &lta&gt etiketi kullanilir</p>
+    <a
+      href="https://www.google.com/webhp?hl=tr&sa=X&ved=0ahUKEwjHx_GrmrrwAhVthosKHQT1CdUQPAgI"
+      target="_blank"
+    >
+      Google icin Tikla
+    </a>
+
+    <!-- a gibi span gibi bazi etiketler inline etiketlerdir -->
+    <br />
+    <!-- br komutu ile  alt satira gecirdik-->
+    <a href="gorseller.html" target="_blank"> Görseller icin tiklayiniz</a>
+    <br />
+    <a href="assets/img/download.png" target="_blank">
+      Bayrak resmi icin tiklayiniz</a
+    >
+    <!-- Bir resime link vermis olduk(local). bu islem resim yuklemek degildir -->
+    <br />
+    <a href="mailto:ziyaaddinyaramis@gmail.com">Mail icin tiklayiniz</a><br />
+    <a href="https://wa.me/358466133917">Whatsapp</a> <br />
+    <a href="tel:+358466133917">Ara</a> <br />
+
+  <blockquote>Ağlasam sesimi duyar mısınız
+  mısralarımda</blockqoute>
+<!-- blockquote Yazıya girinti verir. Genellikle alıntı yaparken kullanılan bir tagtır. -->
+<br>
+
+  <code>var x=5;</code>
+<!-- code Web sayfasında bilgisayar kodları gösterilmek istediğinde kullanılır. Yazının
+fontu monospace olarak gösterilerek diğer yazılardan belirgin bir şekilde ayrılır. -->
+<br>
+    F<sub>2</sub>
+    <!-- Alt simge olarak göstermek için kullanılır -->
+<br>
+    X<sup>2</sup>
+    <!-- Üst simge olarak göstermek için kullanılır -->
+<br>
+<p>Bu dersimide <abbr title="Hypertext Markup
+Language">HTML</abbr> konusunu göreceğiz</p>
+<!-- Kısaltmalar için, fare ile üzerine gelindiğinde açıklama yazısı çıkarır. -->
+
+<br>
+
+
+
+  </body>
+</html>
