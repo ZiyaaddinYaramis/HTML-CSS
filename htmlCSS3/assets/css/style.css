@@ -1,11 +1,77 @@
+/*Tarayicidan google font'a girdik ve nunito yazi formatini aratarak  ekrandan scplit'ini aldik. nasil yapildigina videodan bakabilirsin. https://fonts.google.com/specimen/Nunito?query=nunito */
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,200;1,300;1,400;1,600;1,700&display=swap");
+
 /*Formlar yazisini, input'lari ve yazilari global vererek ortalayalim */
 * {
   text-align: center;
+  margin: 0; /* Bastan tum marginleri 0'la.
+  Bastan tum nesneleri sifira sifir noktasindan hizalamak icin bastan  marjin denilir. */
+  box-sizing: border-box; /* box -sizing CSS'de kullanilan kutu modelini secmek icin kullanilir.Genelde Border-box modeli tercih edilir*/
 }
 
-/* class="input" olan inputlara bir style olusturalim*/
+h1 {
+  margin-top: 50px; /*h1 e 50px'lik bir bosluk verdik*/
+}
+
+body {
+  background-image: linear-gradient(
+    rgb(241, 213, 213),
+    rgb(128, 245, 128)
+  ); /*background-image ile background'a resim konulabilir.
+  linear-gradient() bir fonksiyondur  ve renkleri karistirarak bir background elde etmenizi saglar
+  linear-gradient(red,green) ile kirmizi ila yesil arasindaki renkleri karistir dedik */
+
+  font-family: "Nunito", sans-serif; /*font-family: "Nunito", sans-serif; ile yazi stilini nunito'ya cevirdik
+  https://fonts.google.com/specimen/Nunito?query=nunito*/
+}
+
+/* class="input" olan inputlara bir style olusturalim. input ismi zorunlu degildir */
 .input {
-  margin-bottom: 20px; /*Bosluk verelim*/
-  width: 200px; /*Genislik(uzunluk) verelim*/
-  height: 25px; /*Yukseklik verelim*/
+  margin-bottom: 20px; /* 20px Bosluk verelim*/
+  width: 200px; /* 200px Genislik(uzunluk) verelim*/
+  height: 25px; /* 25px Yukseklik verelim*/
+}
+
+.label {
+  display: block; /*display konumlandirmayla alakalidir. display: block ; ile inline olan bir eleman blok hale getirilebilir. yani alt alta yazdirilabilir  */
+  /*display: none ; ile label'lari görunmez yapabilirsin */
+  margin-right: 10px; /*10px sagdan bosluk verdik*/
+}
+
+.btn {
+  font-size: 16px;
+  color: white; /*yaziyi beyaz yaptik*/
+  width: 100px; /*uzunluk*/
+  height: 30px; /*yukseklik*/
+  margin-top: 10px; /* marjin bir elemanin diger elemanla dislarinin uzakligidir*/
+  border: 2px solid green; /* iki pixel kalinliginda etrafini sardik*/
+  border-radius: 20px; /*Kutucugu 20 pixel ebatinda yuvarlar hale getiriyor*/
+  background: rgb(231, 164, 164); /* background rengini olusturduk*/
+  cursor: pointer; /* yazinin uzerine geldiginizde fare pointer seklini alir*/
+}
+
+.btn:hover {
+  /*hover yazinin uzerine gelindiginde yapilan degisiklikleri belirler*/
+  background: gray;
+}
+
+.far,
+.fas {
+  color: black;
+}
+/* far ve fas class'larina yani icon resimlerini siyah yaptik */
+
+/* i{
+  color: black;
+}
+
+ile butun ikonler siyah olur pek kullanilmaz. burada dikkat edecegimiz nokta class'larin önune "."  konulur ama etiketlerin önune (i) konulmaz */
+
+textarea {
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /*yazi stilini belirledik*/
+  text-align: justify; /*text-align: justify ile yaziyi iki tarafa yasladik*/
+  width: 200px;
+  border-radius: 10px;
 }

@@ -1,0 +1,49 @@
+* {
+  margin: 0; /*Tum marjin'leri sifirladik*/
+  box-sizing: border-box;
+}
+
+body {
+  margin-left: 30px;
+  margin-right: 30px;
+  /* marjin dislardaki uzakliktir*/
+
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* p {
+  margin-left: 30px;
+} body'ye direk marjin verdigimiz icin buraya gerek kalmadi */
+
+h1 {
+  color: red;
+  text-decoration: center;
+}
+
+img {
+  width: 20%; /* resmi %20 oraninda kuculttuk*/
+}
+
+.kutu {
+  border: 2px solid black;
+  border-radius: 10px;
+
+  margin-left: auto;
+  margin-right: auto;
+  /*div'i sagdan soldan margin'ledik*/
+  text-align: center; /* div'in icindekileri ortalar*/
+  margin-bottom: 20px; /* div'ler (.kutu) arasina 20 pixcel bosluk verdik*/
+  width: 400px; /*width: 400px; ile  div alanini 400 pixel ile sinirlandirdik*/
+  background-color: aquamarine; /*default olarak tanimladiginizda  div alanini komple kaplar */
+}
+
+.orta {
+  background-color: wheat;
+  width: 100%;
+}
+
+.alt {
+  background-image: linear-gradient(rgb(206, 206, 233), grey);
+  width: 500px;
+}

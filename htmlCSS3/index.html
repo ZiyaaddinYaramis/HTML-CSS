@@ -4,6 +4,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css"
+    />
+    <!--font-awesome'in server'ina baglanan link. baglanti kurduk bu sekilde font-awesome da ucretsiz olan sytle'lari kullanabiliriz örnegin (save iconu)-->
+
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- style dosyasina link vermeliyiz ki  index style dosyasindaki style'lar aktif olabilsin-->
 
@@ -17,9 +23,10 @@
       
       <form action="kaydet.php"></form> diyelim ki server da bir dosyaniz var bu formu birisi submit ederse kaydet.php deki serverdaki dosyayi al ver, o icrasini yapsin diyoruz -->
 
-      <label for="ad">Adiniz</label>
+      <label class="label" for="ad">Adiniz</label>
 
       <!-- label input'un önune yazi girmek icindir br koyarsan alt satira atar kullanabilirsin-->
+      <!-- class="label" ile label'a style.css dosyasindan  stillendirme yapamak icin bir class atadik -->
 
       <input
         class="input"
@@ -32,7 +39,7 @@
       <br />
       <br />
 
-      <!-- name="ad" diye bir degisken olusturduk  adiniz isimli(label) input'a girilen(submit edilen) veriyi server da "ad" isimli bir degiskene atanmis olunacaktir. gercekten calisan bir sistemde name="ad" ve value="" kullanilmalidir.-->
+      <!-- name="ad" diye bir degisken olusturduk  adiniz isimli(label) input'a girilen(submit edilen) veriyi server da "ad" isimli bir degiskene atanmis olunacaktir. gercekten calisan bir sistemde name="ad" (verinin kaydedilecegi konteyner) ve value="" kullanilmalidir.-->
 
       <!-- class="input" ==> input adinda bir classimiz var. (adina herhangi bir isim verebilirsiniz anlasilmasi kolay olsun diye input yazdik.) Amacimiz style.css dosyasindan buradaki tum class="input" olan imputlara ortak sytle vermektir 
     
@@ -52,7 +59,7 @@
       type submit ise  girilen veriyi  belirtilen yere(kaydet.php) yukleme islemini yapar
     -->
 
-      <label for="sifre">Sifreniz</label>
+      <label class="label" for="sifre">Sifreniz</label>
       <input
         class="input"
         id="sifre"
@@ -66,12 +73,12 @@
 
       <!-- required="" ile input alaninin icine verinin girilmesini zorunlu hale getirir-->
 
-      <label for="email">E-Posta</label>
+      <label class="label" for="email">E-Posta</label>
       <input class="input" id="email" type="email" name="email" value="" />
       <br />
       <br />
 
-      <label for="sayi">Yasiniz</label>
+      <label class="label" for="sayi">Yasiniz</label>
       <input
         class="input"
         id="sayi"
@@ -83,18 +90,36 @@
       />
       <br />
 
+      <label class="label" for="adres">Adres</label>
+      <textarea name="text-alani" id="adres" rows="10"></textarea>
+      <!-- bir text alani yerlestirdik -->
+      <br />
+
       <!-- Buraya bir buton koyalim submit butonu gönder butonu. Bunuda input ile yapabiliriz 
-    type olarak button yazmaliyiz
-    isim olarakta => value="Gönder" yazmaliyiz
-    
-    -->
+      type olarak button yazmaliyiz
+      isim olarakta => value="Gönder" yazmaliyiz
+      -->
 
-      <input type="submit" value="Gönder" />
-
+      <!-- <input class="btn" type="submit" value="Gönder" /> -->
       <!-- buton'un turunu type="submit" dersek bir görev tahsil ediyor yani bu formdaki verileri kaydet.php adinda (<form action="kaydet.php"></form>) bir server dosyasina göndermeye calisiyor  -->
 
-      <input type="button" value="Temizle" />
+      <button class="btn" type="submit">
+        <i class="far fa-save"></i> Gönder
+      </button>
+
+      <!--<button type="submit">Sakla</button> => button tagini kullanirsaniz bir arti olarak icine resim koymasi daha kolay oluyor -->
+      <!-- <i class="far fa-save"></i> ==> ile Gönder isimli button icine icon eklemis olduk (https://fontawesome.com/icons/save?style=regular sitesinden aldik) -->
+
+      <!-- <input class="btn" type="button" value="Temizle" /> -->
       <!-- <input type="button" value="Temizle" /> klasik butondur -->
+
+      <button class="btn" type="submit">
+        <i class="fas fa-trash-alt"></i> Temizle
+      </button>
+      <!-- <i class="fas fa-trash-alt"> ==> ile Temizle isimli button icine icon eklemis olduk (https://fontawesome.com/icons/trash-alt?style=solid sitesinden aldik) -->
+
+      <!-- <i class="far fa-save"></i> -->
+      <!--https://fontawesome.com/icons/save?style=regular  sitesinden  save ikonu icin scplit aldik ve  buraya yapistirdik. bu islemin gerceklesmesi icin 7. satirdaki link yani import'a dikkat edilmelidir -->
     </form>
   </body>
 </html>
