@@ -36,14 +36,53 @@ img {
   margin-bottom: 20px; /* div'ler (.kutu) arasina 20 pixcel bosluk verdik*/
   width: 400px; /*width: 400px; ile  div alanini 400 pixel ile sinirlandirdik*/
   background-color: aquamarine; /*default olarak tanimladiginizda  div alanini komple kaplar */
+
+  /*Div'lere class atadik ve  bu divlerdeki ortak  kelime uzerinden style verdik bu sekilde  kolaylik saglanmis oldu*/
 }
 
-.orta {
+.kutu.orta {
+  /* .kutu ekleyerek 28. satiri overide etmis olduk yani etkisiz kildik..  .kutu.orta ==> kutunun orta elemanini style'lendir*/
   background-color: wheat;
   width: 100%;
 }
 
 .alt {
+  /* class'i kutu alt olan  kisima style verdik*/
   background-image: linear-gradient(rgb(206, 206, 233), grey);
   width: 500px;
+}
+
+.kutu1 {
+  /* margin-top: 20px; */
+  width: 100px;
+  height: 50px;
+  float: left; /*Blok nesneleri yanyana dizmek icin kulanilir. (Elemanlari yani div'leri yanyana  getirir)*/
+}
+
+.kutu1.sari {
+  background-color: yellow;
+  width: 40%; /* Yan yana dizilen nesneleri buyuklukleri % ile belirlenebilir*/
+}
+
+.kutu1.yesil {
+  background-color: green;
+  width: 20%;
+}
+.kutu1.kirmizi {
+  background-color: red;
+  width: 30%;
+}
+
+.kutu1.mavi {
+  background-color: blue;
+  width: 10%;
+}
+
+.kutu1.mor {
+  width: 100%;
+  background-color: mediumorchid;
+}
+/*Float:left kullanildiginda alt satira gecildiginde  ust satir ile bir birlesme olursa cleardix adinda bir hack yöntemi kullanilabilir. bunun icin birlesen satira bir dic eklenir*/
+.clearfix {
+  clear: both;
 }

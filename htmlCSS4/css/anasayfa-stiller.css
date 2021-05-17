@@ -1,0 +1,51 @@
+* {
+  margin: 0%; /*guzel bir(bastan) style'lendirme yapmak icin genellikle once margin sifirlanir. Daha sonra body icinde yeni bir marjin verilir. Bu bir tavsiye ve ayni zamanda opsiyoneldir */
+  box-sizing: border-box;
+}
+
+body {
+  margin: 30px 30px 40px 50px;
+  /*margin: 30px; yapilirsa ust, sag, alt, sol olarak her taraftan 30 px margin verir.
+  margin: 30px 50px; yapilirsa, ust ve alt 30px - sag ve sol 50px olarak margin verir ve siralama
+  ust, sag, alt, sol olarak devam eder (ust'den baslayip saat yönunde gider
+  margin: 30px 30px 40px 50px;
+  hepsi ayri ayrida yazilabilir
+  */
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center; /*text'i ortaladik*/
+  color: black; /*yaziya (text'e) renk verdik*/
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.header {
+  background-color: red;
+  height: 50px;
+  padding: 50px;
+  color: white;
+  margin-bottom: 10px; /* header div'ine altan 10px margin verdik*/
+}
+
+.nav {
+  background-color: blue;
+  padding: 10px;
+}
+
+.aside {
+  background-color: yellow;
+  float: left;
+  width: 25%; /*uzunluk*/
+  height: 60%;
+}
+.main {
+  float: left;
+  background-color: white;
+  width: 75%;
+  height: 60%;
+}
+
+.footer {
+  background-color: grey;
+  padding: 30px;
+}
