@@ -20,6 +20,7 @@
       <div class="row">
         <div class="col">
           <img
+            id="resim-1"
             class="img-fluid border border-danger border-2 rounded-3"
             src="https://images.pexels.com/photos/5059124/pexels-photo-5059124.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
             alt="img-1"
@@ -48,17 +49,27 @@
       <button class="btn btn-outline-warning">TIKLA</button>
       <button class="btn btn-danger">SIL</button>
       <button class="btn btn-success">GÖNDER</button>
+
       <button
         type="button"
         class="btn btn-outline-primary btn-lg d-block w-100 mt-4"
       >
-        KAYDET
-      </button>
-
-      <!-- buttonlar inline dir  ve bundan öturu yanyana yapar asagiya indirmek icin d-block kullanilabilir baska bir suru yolu daha  vardir
+        <!-- buttonlar inline dir  ve bundan öturu yanyana yapar asagiya indirmek icin d-block kullanilabilir baska bir suru yolu daha  vardir
       w-100 ==> dersek buton tum container i kaplar % olarak dusunulebilir w-50 dese idik yarisi olacaktir
-      
       -->
+        KAYDET
+        <a href="index.html#resim-1"></a>
+        <!--index.html#resim-1  ==> ayni sayfada iseniz sayfayi yazmaniza gerek yoktur (index.html)
+        link verir iken sira ile link yolu(index.html) # ve id(resim-1) Not id ise # kullanmak zorundayiz-->
+      </button>
+    </div>
+
+    <div class="container">
+      <div class="btn-group">
+        <a href="#" class="btn btn-warning">1</a>
+        <a href="#" class="btn btn-success">2</a>
+        <a href="#" class="btn btn-info">3</a>
+      </div>
     </div>
 
     <script src="js/bootstrap.bundle.js"></script>
